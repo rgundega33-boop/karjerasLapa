@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Palīdzība studentiem apvienot studijas un darbu, veicinot elastīgākus grafikus un pusslodzes iespējas.">
+  <meta name="theme-color" content="#020617">
+  <title>STUDENT+ | Studē vairāk. Strādā gudrāk.</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white font-sans text-slate-900 antialiased">
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/95 text-white shadow-lg backdrop-blur-xl">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-6" aria-label="Galvenā navigācija">
+      <a href="#home" class="text-2xl font-black tracking-tight">STUDENT<span class="text-blue-400">+</span></a>
+      <div class="hidden items-center gap-8 md:flex">
+        <a href="#home" class="text-sm text-slate-300 transition hover:text-blue-400">Sākums</a>
+        <a href="#problem" class="text-sm text-slate-300 transition hover:text-blue-400">Problēma</a>
+        <a href="#solutions" class="text-sm text-slate-300 transition hover:text-blue-400">Risinājumi</a>
+        <a href="#benefits" class="text-sm text-slate-300 transition hover:text-blue-400">Ieguvumi</a>
+        <a href="#about" class="text-sm text-slate-300 transition hover:text-blue-400">Par mani</a>
+      </div>
+      <a href="#contact" class="hidden rounded-full bg-blue-600 px-5 py-2.5 text-sm font-bold transition hover:bg-blue-500 sm:inline-flex">Sazināties</a>
+      <button id="menuButton" class="rounded-lg p-2 text-white hover:bg-white/10 md:hidden" aria-label="Atvērt izvēlni" aria-expanded="false">
+        <i data-lucide="menu" class="h-6 w-6"></i>
+      </button>
+    </nav>
+    <div id="mobileMenu" class="hidden border-t border-white/10 bg-slate-950 px-5 py-4 md:hidden">
+      <div class="flex flex-col gap-4">
+        <a href="#home" class="mobile-link text-slate-200 hover:text-blue-400">Sākums</a>
+        <a href="#problem" class="mobile-link text-slate-200 hover:text-blue-400">Problēma</a>
+        <a href="#solutions" class="mobile-link text-slate-200 hover:text-blue-400">Risinājumi</a>
+        <a href="#benefits" class="mobile-link text-slate-200 hover:text-blue-400">Ieguvumi</a>
+        <a href="#about" class="mobile-link text-slate-200 hover:text-blue-400">Par mani</a>
+        <a href="#contact" class="mobile-link font-bold text-blue-400">Sazināties</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="relative isolate scroll-mt-24 overflow-hidden bg-slate-950 px-6 py-24 text-white sm:py-32 lg:py-36">
+      <div class="absolute -right-32 -top-32 -z-10 h-96 w-96 rounded-full bg-blue-600/20 blur-3xl"></div>
+      <div class="absolute -bottom-40 -left-32 -z-10 h-96 w-96 rounded-full bg-indigo-600/20 blur-3xl"></div>
+      <div class="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
+        <div>
+          <div class="inline-flex items-center gap-2 rounded-full border border-blue-400/30 bg-blue-400/10 px-4 py-2 text-sm font-semibold text-blue-300">
+            <span class="h-2 w-2 rounded-full bg-blue-400"></span> Vairāk iespēju studentiem
+          </div>
+          <h1 class="mt-8 text-6xl font-black leading-[1.05] tracking-tight sm:text-7xl lg:text-8xl">
+            Studē vairāk.<span class="block text-blue-400">Strādā gudrāk.</span>
+          </h1>
+          <p class="mt-8 max-w-xl text-lg leading-relaxed text-slate-300 sm:text-xl">
+            Palīdzu studentiem meklēt iespējas apvienot studijas ar darbu, lai izglītība, praktiskā pieredze un personīgā izaugsme varētu iet roku rokā.
+          </p>
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a href="#solutions" class="inline-flex items-center gap-3 rounded-full bg-blue-600 px-7 py-4 font-bold transition hover:-translate-y-1 hover:bg-blue-500">
+              Apskatīt risinājumus <i data-lucide="arrow-up-right" class="h-5 w-5"></i>
+            </a>
+            <a href="#about" class="inline-flex items-center rounded-full border border-slate-600 px-7 py-4 font-semibold transition hover:border-white hover:bg-white/10">Iepazīt mani</a>
+          </div>
+          <div class="mt-14 grid max-w-lg grid-cols-3 gap-4 border-t border-slate-700 pt-7">
+            <div><p class="font-bold text-white">Studijas</p><p class="mt-1 text-xs text-slate-400 sm:text-sm">Zināšanas</p></div>
+            <div><p class="font-bold text-white">Darbs</p><p class="mt-1 text-xs text-slate-400 sm:text-sm">Pieredze</p></div>
+            <div><p class="font-bold text-white">Izaugsme</p><p class="mt-1 text-xs text-slate-400 sm:text-sm">Nākotne</p></div>
+          </div>
+        </div>
+        <div class="mx-auto w-full max-w-lg">
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-xl sm:p-8">
+            <div class="flex items-center justify-between">
+              <div><p class="text-sm text-slate-400">Ideja vienā attēlā</p><h2 class="mt-1 text-2xl font-bold">Līdzsvars, kas strādā</h2></div>
+              <div class="rounded-2xl bg-blue-500/20 p-3 text-blue-300"><i data-lucide="graduation-cap" class="h-8 w-8"></i></div>
+            </div>
+            <div class="mt-8 space-y-4">
+              <div class="flex items-center gap-4 rounded-2xl bg-white/5 p-5">
+                <div class="rounded-xl bg-blue-500/20 p-3 text-blue-300"><i data-lucide="book-open" class="h-6 w-6"></i></div>
+                <div><h3 class="font-bold">Studijas</h3><p class="text-sm text-slate-400">Lekcijas, eksāmeni, zināšanas</p></div>
+                <i data-lucide="check-circle-2" class="ml-auto h-5 w-5 text-blue-400"></i>
+              </div>
+              <div class="flex justify-center"><i data-lucide="plus-circle" class="h-7 w-7 text-blue-400"></i></div>
+              <div class="flex items-center gap-4 rounded-2xl bg-white/5 p-5">
+                <div class="rounded-xl bg-indigo-500/20 p-3 text-indigo-300"><i data-lucide="briefcase-business" class="h-6 w-6"></i></div>
+                <div><h3 class="font-bold">Darbs</h3><p class="text-sm text-slate-400">Elastīgs laiks, praktiska pieredze</p></div>
+                <i data-lucide="check-circle-2" class="ml-auto h-5 w-5 text-indigo-400"></i>
+              </div>
+              <div class="rounded-2xl border border-blue-400/30 bg-blue-500/10 p-5 text-center">
+                <p class="font-bold text-blue-200">Vairāk iespēju. Mazāk kompromisu.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section id="problem" class="scroll-mt-24 bg-slate-50 px-6 py-24 sm:py-28">
+      <div class="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
+        <div>
+          <span class="text-sm font-bold uppercase tracking-[.2em] text-blue-600">Problēma</span>
+          <h2 class="mt-5 text-4xl font-black leading-tight tracking-tight sm:text-5xl">Kāpēc jāizvēlas starp studijām un darbu?</h2>
+          <p class="mt-7 text-lg leading-relaxed text-slate-600">Daudzi studenti vēlas iegūt izglītību, strādāt un veidot savu nākotni, taču šīs lietas ne vienmēr ir viegli apvienot.</p>
+          <p class="mt-5 leading-relaxed text-slate-600">Lekciju un darba grafiki var pārklāties, pusslodzes vakances nav vienmēr pieejamas, un darba devēji bieži sagaida iepriekšēju pieredzi. Rezultātā jauniešiem var nākties atteikties no darba vai ierobežot savas studiju iespējas.</p>
+          <div class="mt-8 rounded-2xl border-l-4 border-blue-600 bg-white p-6 shadow-sm">
+            <p class="text-xl font-bold">Bet vai tiešām ir jāizvēlas tikai viens ceļš?</p>
+            <p class="mt-2 text-slate-600">Es uzskatu, ka studentiem ir vajadzīgas reālākas iespējas apvienot abus.</p>
+          </div>
+        </div>
+        <div class="rounded-3xl bg-slate-950 p-7 text-white shadow-2xl sm:p-10">
+          <h3 class="text-2xl font-bold">Studenta ikdienas izaicinājumi</h3>
+          <p class="mt-2 text-slate-400">Divas svarīgas jomas, kurām jāsadzīvo vienā grafikā.</p>
+          <div class="mt-8 space-y-4">
+            <div class="flex items-center gap-4 rounded-2xl bg-white/5 p-5"><div class="rounded-xl bg-blue-500/20 p-3 text-blue-300"><i data-lucide="graduation-cap" class="h-7 w-7"></i></div><div><p class="font-bold">Studijas</p><p class="text-sm text-slate-400">Lekcijas, eksāmeni, mājasdarbi</p></div></div>
+            <div class="flex justify-center"><i data-lucide="plus-circle" class="h-7 w-7 text-blue-400"></i></div>
+            <div class="flex items-center gap-4 rounded-2xl bg-white/5 p-5"><div class="rounded-xl bg-indigo-500/20 p-3 text-indigo-300"><i data-lucide="briefcase-business" class="h-7 w-7"></i></div><div><p class="font-bold">Darbs</p><p class="text-sm text-slate-400">Maiņas, darba laiks, pieredzes trūkums</p></div></div>
+            <div class="rounded-2xl border border-blue-400/30 bg-blue-500/10 p-5 text-center"><i data-lucide="clock" class="mx-auto h-7 w-7 text-blue-300"></i><p class="mt-3 font-bold text-blue-200">Grafiku konflikti un laika trūkums</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions -->
+    <section id="solutions" class="scroll-mt-24 bg-white px-6 py-24 sm:py-28">
+      <div class="mx-auto max-w-7xl">
+        <div class="mx-auto max-w-2xl text-center">
+          <span class="text-sm font-bold uppercase tracking-[.2em] text-blue-600">Ko es piedāvāju</span>
+          <h2 class="mt-5 text-4xl font-black tracking-tight sm:text-5xl">Radīsim iespējas, nevis šķēršļus.</h2>
+          <p class="mt-6 text-lg leading-relaxed text-slate-600">Vēlos veicināt sadarbību starp studentiem, izglītības iestādēm un darba devējiem, lai studijas un darbs būtu savienojami.</p>
+        </div>
+        <div class="mt-14 grid gap-7 md:grid-cols-2">
+          <article class="group rounded-3xl border border-slate-200 bg-slate-50 p-8 transition duration-300 hover:-translate-y-2 hover:border-blue-200 hover:shadow-xl sm:p-10">
+            <div class="flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-100 text-blue-600 transition group-hover:bg-blue-600 group-hover:text-white"><i data-lucide="calendar-clock" class="h-8 w-8"></i></div>
+            <p class="mt-8 text-xs font-bold uppercase tracking-[.2em] text-blue-600">01 / Grafiks</p>
+            <h3 class="mt-3 text-2xl font-black">Elastīgāks studiju un darba grafiks</h3>
+            <p class="mt-5 leading-relaxed text-slate-600">Meklēt iespējas labāk saskaņot lekciju un darba laikus, lai studentiem būtu vieglāk plānot savu ikdienu un pienākumus.</p>
+          </article>
+          <article class="group rounded-3xl border border-slate-200 bg-slate-50 p-8 transition duration-300 hover:-translate-y-2 hover:border-indigo-200 hover:shadow-xl sm:p-10">
+            <div class="flex h-16 w-16 items-center justify-center rounded-2xl bg-indigo-100 text-indigo-600 transition group-hover:bg-indigo-600 group-hover:text-white"><i data-lucide="handshake" class="h-8 w-8"></i></div>
+            <p class="mt-8 text-xs font-bold uppercase tracking-[.2em] text-indigo-600">02 / Sadarbība</p>
+            <h3 class="mt-3 text-2xl font-black">Vairāk pusslodzes darba iespēju</h3>
+            <p class="mt-5 leading-relaxed text-slate-600">Veicināt sadarbību ar darba devējiem, kuri piedāvātu studentiem elastīgu darba laiku un iespēju sākt arī bez iepriekšējas darba pieredzes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits" class="scroll-mt-24 bg-slate-950 px-6 py-24 text-white sm:py-28">
+      <div class="mx-auto max-w-7xl">
+        <div class="max-w-2xl">
+          <span class="text-sm font-bold uppercase tracking-[.2em] text-blue-400">Ieguvumi</span>
+          <h2 class="mt-5 text-4xl font-black sm:text-5xl">Ieguvēji ir visi.</h2>
+          <p class="mt-6 text-lg leading-relaxed text-slate-400">Dodot studentiem iespēju strādāt studiju laikā, mēs palīdzam veidot zinošāku, pieredzējušāku un atbildīgāku jauno paaudzi.</p>
+        </div>
+        <div class="mt-14 grid gap-7 md:grid-cols-2">
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-8 sm:p-10">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/20 text-blue-300"><i data-lucide="brain" class="h-7 w-7"></i></div>
+            <h3 class="mt-7 text-2xl font-bold">Jaunas prasmes un zināšanas</h3>
+            <p class="mt-4 leading-relaxed text-slate-400">Studenti iegūst praktisku pieredzi, attīsta profesionālās prasmes un papildina studijās iegūtās zināšanas ar reālu darba pieredzi.</p>
+          </div>
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-8 sm:p-10">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-indigo-500/20 text-indigo-300"><i data-lucide="shield-check" class="h-7 w-7"></i></div>
+            <h3 class="mt-7 text-2xl font-bold">Atbildība un patstāvība</h3>
+            <p class="mt-4 leading-relaxed text-slate-400">Jaunieši iemācās labāk plānot savu laiku, uzņemties atbildību, pieņemt lēmumus un kļūt patstāvīgāki.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="scroll-mt-24 bg-white px-6 py-24 sm:py-28">
+      <div class="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
+        <div class="rounded-3xl bg-gradient-to-br from-blue-100 to-indigo-200 p-7 sm:p-12">
+          <div class="rounded-2xl bg-white p-8 shadow-xl sm:p-10">
+            <div class="flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-100 text-blue-600"><i data-lucide="heart-handshake" class="h-8 w-8"></i></div>
+            <h3 class="mt-7 text-3xl font-black">Es saprotu, cik tas var būt sarežģīti.</h3>
+            <p class="mt-5 leading-relaxed text-slate-600">Šī ideja radusies no personīgas pieredzes un vēlmes palīdzēt citiem.</p>
+          </div>
+        </div>
+        <div>
+          <span class="text-sm font-bold uppercase tracking-[.2em] text-blue-600">Par mani</span>
+          <h2 class="mt-5 text-4xl font-black leading-tight sm:text-5xl">Kāpēc man uzticēties?</h2>
+          <p class="mt-7 text-lg leading-relaxed text-slate-600">Esmu atvērta, pozitīva un mērķtiecīga jauniete, kura vēlas palīdzēt citiem studentiem.</p>
+          <p class="mt-5 leading-relaxed text-slate-600">Šī tēma man ir īpaši tuva, jo pati esmu saskārusies ar grūtībām apvienot studijas un darbu. Es zinu, cik ļoti dažkārt pietrūkst atbalsta un sapratnes.</p>
+          <p class="mt-5 leading-relaxed text-slate-600">Tieši tāpēc vēlos palīdzēt meklēt risinājumus un veidot vairāk iespēju studentiem.</p>
+          <div class="mt-8 flex items-center gap-3 font-bold text-slate-900"><i data-lucide="heart" class="h-6 w-6 text-blue-600"></i> Mana motivācija ir palīdzēt un radīt pārmaiņas.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="scroll-mt-24 bg-blue-700 px-6 py-24 text-white sm:py-28">
+      <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center">
+        <div>
+          <span class="text-sm font-bold uppercase tracking-[.2em] text-blue-200">Sazinies ar mani</span>
+          <h2 class="mt-5 text-4xl font-black leading-tight sm:text-5xl">Kopā varam radīt vairāk iespēju studentiem.</h2>
+          <p class="mt-6 max-w-xl text-lg leading-relaxed text-blue-100">Vai esi students, darba devējs vai vēlies atbalstīt šo ideju? Es labprāt uzklausīšu tavu viedokli un idejas.</p>
+          <div class="mt-8 flex items-center gap-3 text-blue-100"><i data-lucide="mail" class="h-5 w-5"></i><span>hello@example.com</span></div>
+        </div>
+        <form id="contactForm" class="rounded-3xl bg-white p-7 text-slate-900 shadow-2xl sm:p-9">
+          <h3 class="text-2xl font-black">Uzraksti man</h3>
+          <p class="mt-2 text-sm text-slate-500">Aizpildi laukus, un sagatavošu tev e-pasta ziņojumu.</p>
+          <label class="mt-6 block text-sm font-semibold" for="name">Tavs vārds</label>
+          <input id="name" name="name" required class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-100" placeholder="Vārds Uzvārds">
+          <label class="mt-5 block text-sm font-semibold" for="email">Tavs e-pasts</label>
+          <input id="email" name="email" type="email" required class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-100" placeholder="vards@example.com">
+          <label class="mt-5 block text-sm font-semibold" for="message">Ziņojums</label>
+          <textarea id="message" name="message" rows="4" required class="mt-2 w-full resize-y rounded-xl border border-slate-200 px-4 py-3 outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-100" placeholder="Pastāsti, kā varam sadarboties..."></textarea>
+          <button type="submit" class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-4 font-bold text-white transition hover:bg-blue-700">Sagatavot e-pastu <i data-lucide="send" class="h-4 w-4"></i></button>
+          <p id="formNote" class="mt-3 text-xs leading-relaxed text-slate-500">Piezīme: šī demonstrācijas forma atvērs tavu e-pasta lietotni. Lai ziņojumi tiktu nosūtīti tieši no mājaslapas, vēlāk jāpievieno servera puse vai formu serviss.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 px-6 py-9 text-white">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 sm:flex-row">
+      <a href="#home" class="text-2xl font-black">STUDENT<span class="text-blue-400">+</span></a>
+      <p class="text-center text-sm text-slate-400">© <span id="year"></span> STUDENT+. Visas tiesības aizsargātas.</p>
+      <a href="#home" class="inline-flex items-center gap-2 text-sm text-slate-400 transition hover:text-white">Uz augšu <i data-lucide="arrow-up" class="h-4 w-4"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const menuButton = document.getElementById('menuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuButton.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+      menuButton.setAttribute('aria-expanded', String(!isOpen));
+      menuButton.innerHTML = isOpen
+        ? '<i data-lucide="menu" class="h-6 w-6"></i>'
+        : '<i data-lucide="x" class="h-6 w-6"></i>';
+      lucide.createIcons();
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuButton.setAttribute('aria-expanded', 'false');
+        menuButton.innerHTML = '<i data-lucide="menu" class="h-6 w-6"></i>';
+        lucide.createIcons();
+      });
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', event => {
+      event.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const subject = encodeURIComponent('Ziņojums no STUDENT+ mājaslapas');
+      const body = encodeURIComponent(`Vārds: ${name}\nE-pasts: ${email}\n\nZiņojums:\n${message}`);
+      window.location.href = `mailto:hello@example.com?subject=${subject}&body=${body}`;
+    });
+
+    lucide.createIcons();
+  </script>
+</body>
+</html>
